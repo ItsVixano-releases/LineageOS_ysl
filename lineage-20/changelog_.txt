@@ -1,0 +1,160 @@
+====================
+     2023-02-17    
+====================
+* android
+2ba66bd manifest: Track our fork of packages/modules/Virtualization [Michael Bestas]
+
+* build/soong
+5ea3c92 Disable clang-tidy [Danny Lin]
+457a6c5 cleanbuild: Remove obj/{DTB,DTBO,KERNEL}_OBJ on installclean [Jason Edson]
+2abacf7 ui: Pass the exact CPU thread count to -j [Park Ju Hyung]
+4b0b6cf soong: increase heap size for metalava [LeddaZ]
+
+* device/xiaomi/msm8953-common
+7112a28 msm8953-common: Disable bluetooth enhanced SCO connection [me-cafebabe]
+
+* device/xiaomi/sm8350-common
+b2ec535 sm8350-common: import missing blobs [Ramii Ahmed]
+e86fc28 sm8350-common: rootdir: Apply device specific input boost values [Giovanni Ricca]
+fe3ab6a sm8350-common: sepolicy: Allow fingerprint HAL r/w for fingerprint_device/input_device [Ramii Ahmed]
+79ce0c3 sm8350-common: vibrator: Add support to awinic_haptic node [Ramii Ahmed]
+d545c3e sm8350-common: Allow extracting proprietary-files for recovery [Ramii Ahmed]
+7ea5111 sm8350-common: Add support for taoyao [Ramii Ahmed]
+
+* frameworks/base
+292e5241 base: Disable ripple effect on unlock [Rishawn]
+f6f90faa SystemUI: Add delete action to screen recorder notification [Sourajit Karmakar]
+e680b4d3 Revert "Update Media Seekbar Thumb Shape" [00day0]
+c470466a core: Remove default aspect ratio limit for old apps [Danny Lin]
+0a3cea67 Add support for app signature spoofing [Danny Lin]
+
+* lineage/hudson
+b4afbf9 Panthers are fast but Cheetahs are faster [Nolen Johnson]
+
+* lineage/mirror
+8ae6b0b Updated aosp-minimal to 16-Feb-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+2ee76e6 devices: Import Pixel 7 family devices [Nolen Johnson]
+
+* packages/apps/Settings
+ef1ee79 Settings: Fixup start padding for battery usage graph [Adithya R]
+
+* packages/apps/Trebuchet
+aaa99f0 Revert "Launcher3: Do not attach cleanupScreenshot() to frame update event" [Edwin Moquete]
+badc8df Launcher3: power-off -> screen-off [kubersharma001]
+60a74c8 Launcher3: Show clear all button in recents overview [jhonboy121]
+1560249 Launcher3: Add toggle for DT2S [DennySPB]
+cf09826 Launcher3: Double tap on home screen to turn off screen [Thecrazyskull]
+
+* packages/modules/Permission
+fc7c529 Utils: add FAKE_PACKAGE_SIGNATURE to platform permissions [Vachounet]
+
+* packages/modules/Virtualization
+68a154b sign_virt_apex: Set hash_algorithm flag to sha256 [Shikha Panwar]
+
+* vendor/qcom/opensource/fm-commonsys
+c1992ec jni: Skip loading FM firmware if requested [Ricardo Cerqueira]
+
+* vendor/xiaomi/sm8350-common
+07c1c9f sm8350-common: import missing blobs [Ramii Ahmed]
+
+====================
+     2023-02-16    
+====================
+* packages/apps/Aperture
+636f225 Aperture: Do not store photos captured via other apps [Tommy Webb]
+
+* packages/apps/LineageCustomizer
+6d78f75 Add an exported flag in manifest [Michael Bestas]
+
+====================
+     2023-02-15    
+====================
+* kernel/xiaomi/sm8350
+d0efe8df7817 TMP goodix taoyao-s-oss [Giovanni Ricca]
+b8621bcee42c Revert "input: touchscreen: gt9916: Don't probe if gpio_96 returns 0" [Giovanni Ricca]
+4d38578f5597 input: touchscreen: gt9916: Don't probe if gpio_96 returns 0 [Giovanni Ricca]
+
+* packages/apps/DeskClock
+2d773b9 DeskClock: Fix timer notification [Michael W]
+
+====================
+     2023-02-14    
+====================
+* frameworks/av
+4e4fd6d fixup! audioflinger: Fix audio for WifiDisplay [Michael Bestas]
+
+* frameworks/base
+72ea30c5 Automatic translation import [Michael Bestas]
+
+* frameworks/native
+e9c2c24 Remove BLASTBufferQueue debug log line [Tommy Webb]
+
+* kernel/xiaomi/sm8350
+170875f43e5f arm64: dts: Add PM8008I label [Giovanni Ricca]
+6a2c888510a7 asoc: Fixup taoyao guards [Giovanni Ricca]
+
+* lineage-sdk
+3865315 Automatic translation import [Michael Bestas]
+
+* lineage/scripts
+3508ae0 device-deps-regenerator: blacklist -> ignorelist [Michael Bestas]
+
+* packages/apps/AudioFX
+bb65196 Automatic translation import [Michael Bestas]
+
+* packages/apps/Dialer
+eadac53 Automatic translation import [Michael Bestas]
+
+* packages/apps/DocumentsUI
+67a7b01 Automatic translation import [Michael Bestas]
+
+* packages/apps/Eleven
+cdab07b Automatic translation import [Michael Bestas]
+
+* packages/apps/Etar
+35931d5 Automatic translation import [Michael Bestas]
+
+* packages/apps/FlipFlap
+e09235c Automatic translation import [Michael Bestas]
+
+* packages/apps/Jelly
+7f72e28 Automatic translation import [Michael Bestas]
+
+* packages/apps/LineageParts
+f893daa Automatic translation import [Michael Bestas]
+
+* packages/apps/Recorder
+21ad3da Automatic translation import [Michael Bestas]
+
+* packages/apps/Settings
+fe00b54 Automatic translation import [Michael Bestas]
+
+* packages/apps/SetupWizard
+6a4d8ba Automatic translation import [Michael Bestas]
+
+* packages/apps/Trebuchet
+4ca5f8a Automatic translation import [Michael Bestas]
+
+* packages/apps/Updater
+304b45b Automatic translation import [Michael Bestas]
+
+* packages/inputmethods/LatinIME
+a0efe97 Automatic translation import [Michael Bestas]
+
+* packages/resources/devicesettings
+080152a Automatic translation import [Michael Bestas]
+
+* vendor/crowdin
+a699b1d Automatic translation import [Michael Bestas]
+
+* vendor/lineage
+d9d76b3 vars: Update floral to TP1A.221005.002.B2 [Michael Bestas]
+
+* vendor/qcom/opensource/fm-commonsys
+dcca002 Automatic translation import [Michael Bestas]
+
+====================
+     2023-02-13    
+====================

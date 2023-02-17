@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1673870338,
-      "filename": "lineage-20.0-20230116-UNOFFICIAL-ysl.zip",
-      "id": "6bcf946dd90dc64194b705c6aa7ccc7b",
+      "datetime": 1676632646,
+      "filename": "lineage-20.0-20230217-UNOFFICIAL-ysl.zip",
+      "id": "bd753c7d54fe52234e60d1eca2733cf0",
       "romtype": "unofficial",
-      "size": 774331150,
-      "url": "https://github.com/ItsVixano-releases/LineageOS_ysl/releases/download/20230116/lineage-20.0-20230116-UNOFFICIAL-ysl.zip",
+      "size": 774557528,
+      "url": "https://github.com/ItsVixano-releases/LineageOS_ysl/releases/download/20230217/lineage-20.0-20230217-UNOFFICIAL-ysl.zip",
       "version": "20.0"
     }
   ]
