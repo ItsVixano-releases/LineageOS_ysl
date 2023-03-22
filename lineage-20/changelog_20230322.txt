@@ -49,11 +49,17 @@ b285e25 TMP [Giovanni Ricca]
 * vendor/extra/tools/releases/LineageOS_daisy
 09db63f LineageOS_daisy: lineage-20: 20230322 [Giovanni Ricca]
 
+* vendor/extra/tools/releases/LineageOS_ysl
+eefe3a6 LineageOS_ysl: lineage-20: 20230322 [Giovanni Ricca]
+
 * vendor/lineage
 3450d31 Switch to AOSP themes stub package [Michael Bestas]
 
 * vendor/qcom/opensource/fm-commonsys
 b3e112a jni: Skip loading FM firmware if requested [Ricardo Cerqueira]
+
+* vendor/xiaomi/ysl
+ea9ca8d ysl: Extract from V12.0.2.0.PEFMIXM [Giovanni Ricca]
 
 ====================
      2023-03-21    
@@ -61,6 +67,21 @@ b3e112a jni: Skip loading FM firmware if requested [Ricardo Cerqueira]
 * android
 9c62a9d manifest: gs101 March 2023 Quarterly Platform Release and Security update [Michael Bestas]
 
+* packages/apps/Jelly
+bfd3939 Jelly: Stop using restricted APIs [Sebastiano Barezzi]
+
+* packages/apps/Settings
+99c7af0 Hide SFPS wakeup setting when it's not supported [Michael Bestas]
+
+* system/sepolicy
+489e14e Add property to disable APCF extended features [me-cafebabe]
+
+* vendor/xiaomi/sm8350-common
+e59e206 sm8350-common: Patch ims.apk [Arian]
+
+====================
+     2023-03-20    
+====================
 * device/xiaomi/lisa
 756a642 lisa: Decommonize camera blob fixups [Arian]
 1de1c42 lisa: Update blobs to V14.0.2.0.TKOMIXM [Giovanni Ricca]
@@ -69,6 +90,44 @@ dfb92e3 lisa: overlay-lineage: Configure additional camera framerates [Sebastian
 * device/xiaomi/sm8350-common
 bdf432a sm8350-common: sensors: Log dlerror() when dlopen() fails [Chenyang Zhong]
 a701160 sm8350-common: sepolicy: Set sensor HAL as a client of audio HAL [Chenyang Zhong]
+b508781 sm8350-common: Build 64-bit audio HIDL as well [Chenyang Zhong]
+6229f00 sm8350-common: Decommonize camera blob fixups [Arian]
+83f011f sm8350-common: Drop custom APM flag along with no-op audio flags [Bruno Martins]
+c14608e sm8350-common: Sort blobs list /w sort-blobs-list.py [LuK1337]
+1675cf9 sm8350-common: media: Sync media configs from haydn V14.0.3.0.TKKMIXM [Giovanni Ricca]
+7cd0e42 sm8350-common: rootdir: Sync rootdir from haydn V14.0.3.0.TKKMIXM [Giovanni Ricca]
+b7d500c sm8350-common: wifi: Disable Target Wake Time [Giovanni Ricca]
+7299d2b sm8350-common: Patch ims.apk [Arian]
+319c04b sm8350-common: Update from haydn V14.0.3.0.TKKMIXM [AdarshGrewal]
+c05d3d5 sm8350-common: sepolicy: Label more wakeup nodes [AdarshGrewal]
+eb4d6f3 sm8350-common: configs: Add camera-daemon hint [Giovanni Ricca]
+fc89a0f sm8350-common: Remove frozen and unfrozen cgroup [Kishor Krishna Bhat]
+46be795 sm8350-common: Add UClamp support for lahaina [Satya Durga Srinivasu Prabhala]
+5c37e73 sm8350-common: Enable zygote critical window [Woody Lin]
+5431992 sm8350-common: Enable set channel on NDP setup [Nate Jiang]
+5a235fa sm8350-common: wifi: Configure correct overlay configuration. [Les Lee]
+8ab1702 sm8350-common: Drop config_setColorTransformAccelerated [Georg Veichtlbauer]
+0a12330 sm8350-common: overlay: Update multiple vibration strength levels overlay for 13 [Michael Bestas]
+47d16b8 sm8350-common: QCOM healthd is globally tracked now [Nolen Johnson]
+fa29366 sm8350-common: gps: Fix -Wbitwise-instead-of-logical [Pirama Arumuga Nainar]
+0f5068a sm8350-common: Provide DRM HIDL interface on vendor [AdarshGrewal]
+c68b57c sm8350-common: Migrate to AIDL ClearKey DRM HAL [Bruno Martins]
+2218390 sm8350-common: Remove unused persist.bluetooth.a2dp_offload.cap property [Edwin Moquete]
+a25e493 sm8350-common: Add Bluetooth power overlays to sysprops [Alexander Koskovich]
+286b095 sm8350-common: Move BT profiles props to vendor [Alexander Koskovich]
+1808993 sm8350-common: Disable LE audio related profiles [Alice Kuo]
+e118603 sm8350-common: Use the ?= operator so BT properties can be overridden [Sal Savage]
+c5ced08 sm8350-common: Set default the Bluetooth class of device [Sal Savage]
+8e6bf6e sm8350-common: Update LE Audio profile properties to match spec and implementation [Sal Savage]
+5a1ee9c sm8350-common: Enable bluetooth profiles with product.prop [Sal Savage]
+e44aac4 sm8350-common: Remove bdroid_buildcfg.h [Michael Bestas]
+2c43d6d sm8350-common: Remove A2DP input module in audio policy configuration [llololo]
+43cf637 sm8350-common: Switch BtAudio to AIDL [Josh Wu]
+3334f2e sm8350-common: Use bluetooth.audio@2.1 [Jakub Pawlowski]
+f6d9784 sm8350-common: audio: Enable AOSP bluetooth audio HAL v2 [dianlujitao]
+c961ca9 sm8350-common: Remove libbthost_if from product packages [dianlujitao]
+e672de6 sm8350-common: Remove QTI BT stack bits [Bruno Martins]
+a1cf0b5 Revert "sm6250-common: Switch to QTI bt stack" [AdarshGrewal]
 
 * kernel/xiaomi/sm8350
 7613bf0ddabe TMP [Giovanni Ricca]
@@ -300,64 +359,6 @@ a1b0d335e04d techpack: display: modify lp11 handling [Cosmin Tanislav]
 fc0ea7b33004 techpack: display: adjust dphy registers based on clock strength [Cosmin Tanislav]
 b2a1b28a9f65 HACK: binder: Disable freeze related ioctls [LuK1337]
 
-* packages/apps/Jelly
-bfd3939 Jelly: Stop using restricted APIs [Sebastiano Barezzi]
-
-* packages/apps/Settings
-99c7af0 Hide SFPS wakeup setting when it's not supported [Michael Bestas]
-
-* packages/modules/Bluetooth
-c05bc8c Add property to disable APCF extended features [me-cafebabe]
-
-* system/sepolicy
-489e14e Add property to disable APCF extended features [me-cafebabe]
-
-* vendor/xiaomi/sm8350-common
-e59e206 sm8350-common: Patch ims.apk [Arian]
-
-====================
-     2023-03-20    
-====================
-* device/xiaomi/sm8350-common
-b508781 sm8350-common: Build 64-bit audio HIDL as well [Chenyang Zhong]
-6229f00 sm8350-common: Decommonize camera blob fixups [Arian]
-83f011f sm8350-common: Drop custom APM flag along with no-op audio flags [Bruno Martins]
-c14608e sm8350-common: Sort blobs list /w sort-blobs-list.py [LuK1337]
-1675cf9 sm8350-common: media: Sync media configs from haydn V14.0.3.0.TKKMIXM [Giovanni Ricca]
-7cd0e42 sm8350-common: rootdir: Sync rootdir from haydn V14.0.3.0.TKKMIXM [Giovanni Ricca]
-b7d500c sm8350-common: wifi: Disable Target Wake Time [Giovanni Ricca]
-7299d2b sm8350-common: Patch ims.apk [Arian]
-319c04b sm8350-common: Update from haydn V14.0.3.0.TKKMIXM [AdarshGrewal]
-c05d3d5 sm8350-common: sepolicy: Label more wakeup nodes [AdarshGrewal]
-eb4d6f3 sm8350-common: configs: Add camera-daemon hint [Giovanni Ricca]
-fc89a0f sm8350-common: Remove frozen and unfrozen cgroup [Kishor Krishna Bhat]
-46be795 sm8350-common: Add UClamp support for lahaina [Satya Durga Srinivasu Prabhala]
-5c37e73 sm8350-common: Enable zygote critical window [Woody Lin]
-5431992 sm8350-common: Enable set channel on NDP setup [Nate Jiang]
-5a235fa sm8350-common: wifi: Configure correct overlay configuration. [Les Lee]
-8ab1702 sm8350-common: Drop config_setColorTransformAccelerated [Georg Veichtlbauer]
-0a12330 sm8350-common: overlay: Update multiple vibration strength levels overlay for 13 [Michael Bestas]
-47d16b8 sm8350-common: QCOM healthd is globally tracked now [Nolen Johnson]
-fa29366 sm8350-common: gps: Fix -Wbitwise-instead-of-logical [Pirama Arumuga Nainar]
-0f5068a sm8350-common: Provide DRM HIDL interface on vendor [AdarshGrewal]
-c68b57c sm8350-common: Migrate to AIDL ClearKey DRM HAL [Bruno Martins]
-2218390 sm8350-common: Remove unused persist.bluetooth.a2dp_offload.cap property [Edwin Moquete]
-a25e493 sm8350-common: Add Bluetooth power overlays to sysprops [Alexander Koskovich]
-286b095 sm8350-common: Move BT profiles props to vendor [Alexander Koskovich]
-1808993 sm8350-common: Disable LE audio related profiles [Alice Kuo]
-e118603 sm8350-common: Use the ?= operator so BT properties can be overridden [Sal Savage]
-c5ced08 sm8350-common: Set default the Bluetooth class of device [Sal Savage]
-8e6bf6e sm8350-common: Update LE Audio profile properties to match spec and implementation [Sal Savage]
-5a1ee9c sm8350-common: Enable bluetooth profiles with product.prop [Sal Savage]
-e44aac4 sm8350-common: Remove bdroid_buildcfg.h [Michael Bestas]
-2c43d6d sm8350-common: Remove A2DP input module in audio policy configuration [llololo]
-43cf637 sm8350-common: Switch BtAudio to AIDL [Josh Wu]
-3334f2e sm8350-common: Use bluetooth.audio@2.1 [Jakub Pawlowski]
-f6d9784 sm8350-common: audio: Enable AOSP bluetooth audio HAL v2 [dianlujitao]
-c961ca9 sm8350-common: Remove libbthost_if from product packages [dianlujitao]
-e672de6 sm8350-common: Remove QTI BT stack bits [Bruno Martins]
-a1cf0b5 Revert "sm6250-common: Switch to QTI bt stack" [AdarshGrewal]
-
 * lineage-sdk
 9f63a52 Fix FINGERPRINT_WAKE_UNLOCK migration for devices not supporting it [Michael Bestas]
 
@@ -366,6 +367,9 @@ c0b9474 The device where Aperture took its first steps finally gets a Tiramisù 
 
 * packages/apps/LineageParts
 d2ed9ba Temporarily hide status bar brightness control setting [Michael Bestas]
+
+* packages/modules/Bluetooth
+c05bc8c Add property to disable APCF extended features [me-cafebabe]
 
 * vendor/extra
 6627a42 extra: build: Update patches [Giovanni Ricca]

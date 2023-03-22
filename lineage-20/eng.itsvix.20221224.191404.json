@@ -3,10 +3,10 @@
     {
       "datetime": 1679471454,
       "filename": "lineage-20.0-20230322-UNOFFICIAL-ysl.zip",
-      "id": "68f6e7c1276ebd34c90345088fd7ae70",
+      "id": "befbdf058446c49781503f8a9fa3985d",
       "romtype": "unofficial",
-      "size": 781370224,
-      "url": "https://github.com/ItsVixano-releases/LineageOS_ysl/releases/download/20230322/lineage-20.0-20230322-UNOFFICIAL-ysl.zip",
+      "size": 781370093,
+      "url": "https://github.com/ItsVixano-releases/LineageOS_ysl/releases/download/20230322-hotfix/lineage-20.0-20230322-UNOFFICIAL-ysl.zip",
       "version": "20.0"
     }
   ]
