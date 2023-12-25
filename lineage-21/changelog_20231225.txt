@@ -1,0 +1,272 @@
+====================
+     2023-12-25    
+====================
+* art
+4f783be art: Disable debug tracing on production builds [Danny Lin]
+
+* build/soong
+dcf782f use speed compiler filter for dexpreopt by default [Daniel Micay]
+09fb11d cleanbuild: Remove obj/{DTB,DTBO,KERNEL}_OBJ on installclean [Jason Edson]
+3ff5653 ui: Pass the exact CPU thread count to -j [Park Ju Hyung]
+15e2ecf soong: Specify heap size for metalava for S+ [Michael W]
+cd5fdc5 soong: Increase Java heap size for r8 [LeddaZ]
+917fb69 soong: increase heap size for metalava [LeddaZ]
+
+* device/xiaomi/mt6895-common
+4ef30b4 [TMP] mt6895-common: Use ext4 for all paritions [Giovanni Ricca]
+
+* device/xiaomi/sm6250-common
+4eb6277 sm6250-common: Set arch variant to armv8-2a-dotprod [Adithya R]
+270fb62 sm6250-common: Define boot image security patch [Alexander Koskovich]
+77ee54f sm6250-common: Set VENDOR_SECURITY_PATCH to platform [Chris Fries]
+
+* device/xiaomi/xaga
+0d998a1 [DNM] xaga: Prebuilt dtbo V14.0.6.0.TLOMIXM [Giovanni Ricca]
+
+* external/jemalloc_new
+e025c53 Add compile option to speed up code. [Christopher Ferris]
+dda12aa Use ELF TLS [Danny Lin]
+e4cf62a android: Disable malloc_iterate [Danny Lin]
+544b43c Enable usage of MADV_FREE [Danny Lin]
+
+* frameworks/av
+15c2ea1 SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/base
+becbfb873 Revert "Revert "Update light/dark detection."" [Alexander Winkowski]
+fcc851b97 Revert "Enable color threshold editing via SystemProperties" [Alexander Winkowski]
+c65949594 PackageInstaller: fix crash when handling STATUS_PENDING_USER_ACTION [Dmitry Muhomor]
+48c3bec88 Camera: Expose aux camera if packagename is null [wbs306]
+18a19bfed SystemUI: Require unlocking to use sensitive QS tiles [Danny Lin]
+ec1d89488 hwui: Compile without no-omit-frame-pointer [Sourajit Karmakar]
+b19428896 libhwui: compile for performance [Vaisakh Murali]
+dc4215490 libhwui: enable O3 when compiling for perf [Vaisakh Murali]
+0c7d433f1 libhwui: remove deprecated perf flags [Vaisakh Murali]
+a518a483b SystemUI: Remove Android build number from QS footer [Danny Lin]
+bbaf986cf SystemUI: Reduce screenshot dismiss delay to 3 seconds [Danny Lin]
+35fb0fac1 core: Remove old app target SDK dialog [Danny Lin]
+8c4a9f9a2 core: Remove default aspect ratio limit for old apps [Danny Lin]
+ce44ff117 AuthRippleView: Allow disabling ripple unlock animation using overlay [jhenrique09]
+de38d6d58 base: SystemUI: Allow flags to be overrideable [Jeferson]
+c5446f1c6 Revert "Ignore the charging ripple flag." [Jeferson]
+7c27cf4a9 Revert "Update Media Seekbar Thumb Shape" [00day0]
+71a2b3bbb base: Add support for app signature spoofing [Danny Lin]
+1642cfdd3 Temp build fix: Remove dependency on mockito-kotlin [Tommy Webb]
+
+* frameworks/native
+d95c0b8 Add MTK GED KPI support to fix broken Mediatek gpufreq [Pierre-Hugues Husson]
+a89bb16 libbinder: Suppress log spam when unlinking death recipients [Danny Lin]
+
+* hardware/xiaomi
+eeca36f interfaces: goodix: Reverse the remaining calls [Giovanni Ricca]
+
+* kernel/xiaomi/msm8953
+672c1a7b1adb Revert "arm64: compliance in AAP OS.KER.2" [Giovanni Ricca]
+
+* packages/apps/ExactCalculator
+f819219 ExactCalculator: Hide when back button is pressed [Georg Veichtlbauer]
+
+* packages/apps/Messaging
+0ebe877 Revert "Messaging: Toggable keyboard emoticons access" [Michael Bestas]
+
+* packages/apps/Trebuchet
+1e12178 Increase blur radius [Alexander Winkowski]
+ee4bf95 DepthController: Change blur radius to dimension resource [Danny Lin]
+610d7b8 Disable blur on app launch [Alexander Winkowski]
+3f7b10c Make scrim transparent [Alexander Winkowski]
+f0a94a1 Trebuchet: Move clear all button to actions view [Vachounet]
+8c490ed Launcher3: Add toggle for DT2S [DennySPB]
+a2dd4e0 Launcher3: Double tap on home screen to turn off screen [Thecrazyskull]
+
+* packages/inputmethods/LatinIME
+d3acbe4 LatinIME: fix gesture typing [johnny]
+137818a Revert "LatinIME: Add fallback loader for JNI lib" [nift4]
+
+* system/vold
+25486ec vold: fix failing to format zero-ed out SD card [nift4]
+
+* vendor/extra/tools/releases/LineageOS_daisy
+4ba14ed LineageOS_daisy: lineage-21: 20231224 [Giovanni Ricca]
+
+* vendor/extra/tools/releases/LineageOS_miatoll
+1ad76ec LineageOS_miatoll: lineage-21: 20231224 [Giovanni Ricca]
+
+* vendor/extra/tools/releases/LineageOS_sakura
+fc0f7d7 LineageOS_sakura: lineage-21: 20231224 [Giovanni Ricca]
+
+* vendor/extra/tools/releases/LineageOS_ysl
+2cf6f4e LineageOS_ysl: lineage-21: 20231224 [Giovanni Ricca]
+
+* vendor/lineage
+b38fb3a kernel: Make INTERNAL_VENDOR_RAMDISK_TARGET depend on kernel [LuK1337]
+
+* vendor/qcom/opensource/libfmjni
+b417813 libfmjni: Don't call `pthread_join` on `Pwr_down` [Giovanni Ricca]
+9799a45 libfmjni: Fix RDS info retrieving [iusmac]
+
+* vendor/xiaomi/mt6895-common
+3324dfa mt6895-common: Sync with tree [Giovanni Ricca]
+
+====================
+     2023-12-24    
+====================
+* build/make
+c083e48 envsetup: Set INLINE_KERNEL_BUILDING if TARGET_PREBUILT_KERNEL is set [Michael Bestas]
+
+* frameworks/base
+26a2970bd Screenrecord: Dismiss notification on stop [Lostark13]
+f8df1cc11 Screenrecord: Remember last used blinking dot position [Ido Ben-Hur]
+1ed367804 Screenrecord: Save preferences for permission dialog [Pranav Vashi]
+1ba3b71f8 Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
+85c107069 Screenrecord: Slightly optimize loading/saving preferences [Pranav Vashi]
+b62b928fc Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
+cd53f3561 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
+b368f9795 Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
+6f3301493 Screenrecord: Save and load set preferences [Ido Ben-Hur]
+51cd2e0a2 Screenrecord: add blinking stop dot and low quality options [ezio84]
+1d9dad5db Screenrecord: Allow to select AVC codec profile level [iusmac]
+7a00230a2 Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
+1fcf2dbf4 Screenrecord: Add delete action to the notification [Sourajit Karmakar]
+b6a9068a2 PackageInstaller: limit max AppSnippet icon size [Dmitry Muhomor]
+0bca8a278 SystemUI: Internet tile: Allow long-pressing on mobile network [Michael W]
+fad1f04ce Implement edge long swipe gesture to new back gesture affordance [someone5678]
+549e3ca4f SystemUI: Fix uneven volume icon padding in status bar [Danny Lin]
+12391882c core: legacy toasts deserve rounded corners too [nift4]
+11cc66abf SystemUI: Hide notifications when quickly expanding QS [Adithya R]
+a2a33ff5a SystemUI: Add SCREEN_GESTURE as a CameraLaunchSourceModel [resist15]
+dc2f1e552 SystemUI: Respect the old good "Show passwords" preference [alk3pInjection]
+c2e3026d0 SystemUI: Check if primitive vibrations are supported in new quick affordances [Fabian Leutenegger]
+0bb083a28 appop: Save discrete app op history for more permissions [Danny Lin]
+c0b096d63 services: fix quickswitch with gesture pill disabled [nift4]
+11cf2677d SystemUI: Make center clock follow paddingTop [cjh1249131356]
+402131150 SystemServer: only enable fd leak tracker on eng [Simao Gomes Viana]
+ba3e24adb Add support for runtime toggle of navbar [Bruno Martins]
+b0889aea8 camera2: Add methods for backward compatibility [Ihor Ivanov]
+574f6cd2f AudioService: Remove Analog Dock from fixed-volume devices [Vachounet]
+1067f4a7b BatteryService: Add support for battery Moto Mods [Vachounet]
+9fcfb275d Report success on every fingerprint removal [Kishan Dudhatra]
+98dcfe5f2 AutofillManager: Make userdebug default to NO_LOGGING [LuK1337]
+fbb12556a core: pm: Allow wildcard in RRO system property value checks [Luca Stefani]
+144c3a505 core: pm: Use checkRequiredSystemProperties from FrameworkParsingPackageUtils [Luca Stefani]
+a8149d7dd SystemUI: fix missing rotate suggestion in 2 button nav mode [nift4]
+2ae7793e0 SystemUI: show ime switcher + cursor keys if we have space [nift4]
+98537525b PhoneWindowManager: only handle long press on back key if using it [nift4]
+f343eca6e VolumeDialogImpl: Add STREAM_NOTIFICATION row [LuK1337]
+8f1c9e006 SystemUI: Enable cast tile without Wi-Fi connection [nift4]
+2a0e2424e SystemUI: screenshot: Add delete action chip intent [ganeshi4u]
+6dfbf211f SystemUI: Check whether the selected WFD route is available [Weijie Wang]
+285da5d37 Fix multi-user silent notifications on lockscreen [Tommy Webb]
+22f5d3277 SystemUI: SideFpsEventHandler: Don't crash without FingerprintManager [Michael W]
+137446a8b SystemUI: Prevent NPE when checking for powerbutton FPS [Michael W]
+a1616cf54 DozeSensors: only use proximity sensor if supported [Demon000]
+6fed55bcd InputDevices: Fix Hungarian language overlay [Sean McCreary]
+cda369694 MetaKeyKeyListener: Disable locking of toggled modifier keys [Sean McCreary]
+52112c1f8 SystemUI: Make battery clickable again [Michael W]
+73b413090 PhoneWindowManager: Fix wakeup and long-press actions of assistant key [kyasu]
+3d1ee5855 Settings: Add package name to installed app details [2/2] [Aayush Gupta]
+5080e45a4 SystemUI: React to PrivacyConfig changes properly [Tommy Webb]
+6681b60a1 JobScheduler: Respect allow-in-power-save perm [Tommy Webb]
+1590968fa Increase maximum password length to 64 [Oliver Scott]
+f2b9fc0a9 SystemUI: Respect single-touch wakeup setting on rear & front fps devices [Michael Bestas]
+6d321fec4 SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Adithya R]
+5972c9a6e SystemUI: Don't require AOD for screen off UDFPS [LuK1337]
+30bc920cc SystemUI: DreamTile: Enable for everyone [Ido Ben-Hur]
+d45dfe7bc Apply monet to fingerprint authentication ripple animation [SagarMakhar]
+b2ba606a9 SystemUI: Update string for add tiles with one click [mydongistiny]
+71e822d60 SystemUI: Allow user to add/remove QS with one click [Andrzej Ressel]
+8cddb53ec SystemUI: Fix uneven DND icon padding in status bar [Ido Ben-Hur]
+202765e5d GnssLocationProvider: Implement xtra-daemon toggle [Michael Bestas]
+6e1742949 GnssLocationProvider: Implement PSDS periodic download toggle [Michael Bestas]
+fe6d0be79 GnssLocationProvider: Disable AGPS by default, it'll be enabled in SetupWizard [Chirayu Desai]
+725d80228 Ignore AGPS toggle during user-initiated emergency calls [Chirayu Desai]
+f18d595a0 Remove sensitive info from SUPL requests [Tommy Webb]
+6f1f2bc25 SystemUI: Fix position and orientation of arrow keys in navbar [Wolfram Liebchen]
+4f5a7f4fc Fix stuck screen from display change timeout [Tommy Webb]
+8b2ba7c89 AlertWindowNotification: Correctly load app label [HZ]
+b9be48aab camera: Skip HFR checks for privileged apps. [Sai Kumar Sanagavarapu]
+45fdbc15b Camera: Skip stream size check for whitelisted apps.. [Gaoxiang Chen]
+ee82b2589 IllustrationPreference: Hide illustration when we fail to play anim [LuK1337]
+7fef60236 toast: fix bg color not changing with theme change [SuperDroidBond]
+3caadae75 SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab]
+3778624ee SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod [maxwen]
+933483a24 Fallback ESC to BACK [Aaron Kling]
+02d9522f2 SystemUI: Disable clock auto hide feature for QS [LuK1337]
+c0c6aebeb SystemUI: Network Traffic [1/3] [Sam Mortimer]
+
+* packages/apps/Aperture
+4ac8dad Automatic translation import [LineageOS Infra]
+
+* packages/apps/SettingsIntelligence
+2d1f70c Style search bar to match new Settings UI [Danny Lin]
+
+* packages/apps/Trebuchet
+8229a69 Trebuchet: Let's keep 2-button nav alive for a little longer [nift4]
+e0ec0d2 RecentsView: Unconditionally hide split option for Go-enabled targets [Bruno Martins]
+
+* packages/modules/Connectivity
+250a7f2 TrafficStats: Stop the spam [Subhajeet Muhuri]
+
+====================
+     2023-12-23    
+====================
+* lineage/crowdin
+725ccbb config: lineage-20.0: Add hardware/lge/dac_panel [Han Sol Jin]
+
+* lineage/wiki
+cc609be wiki: Update `kernel` field documentation in adding device page [LuK1337]
+
+* vendor/extra
+fe28b67 extra: build: patches: Sync with los21 fwb [Giovanni Ricca]
+
+* vendor/extra/priv
+34145f8 priv: Sync los 21 patches [Giovanni Ricca]
+
+====================
+     2023-12-22    
+====================
+* device/xiaomi/sm6250-common
+47f7189 sm6250-common: Import missing `loc_launcher` [Giovanni Ricca]
+1532674 sm6250-common: sepolicy: Label wakeup nodes [Giovanni Ricca]
+7274113 sm6250-common: overlay: Remove obsolete config_keyboardTapVibePattern [Bruno Martins]
+dd38052 sm6250-common: Remove some camera-daemon commands [Rick Yiu]
+f60b026 sm6250-common: Build goodix lib from source [Giovanni Ricca]
+71fe3b9 sm6250-common: Blob camera.device* libs [Giovanni Ricca]
+
+* vendor/extra
+73c06b0 extra: build: patches: LMODroid gesture typing without google lib [Giovanni Ricca]
+
+* vendor/xiaomi/sm6250-common
+f83b784 sm6250-common: Import missing `loc_launcher` [Giovanni Ricca]
+
+====================
+     2023-12-21    
+====================
+====================
+     2023-12-20    
+====================
+====================
+     2023-12-19    
+====================
+* hardware/xiaomi
+5fd8b88 hidl: sensors: 2.1: Add additional pick-up sensor name [bengris32]
+
+* kernel/xiaomi/mt6895
+32b636686320 arm64: configs: vendor: xaga: Enable specfic device configs [Giovanni Ricca]
+fea0d0ffaf50 arm64: configs: vendor: Create a dummy xaga fragment config [Giovanni Ricca]
+b36cdafb721a [WIP] power: supply: sc8561: Initializate xaga [Giovanni Ricca]
+a9a780e5ae45 [WIP] power: supply: sc8551: Initializate xaga [Giovanni Ricca]
+221bb1e63c6f [WIP] power: supply: pd_cp_manager: Initializate xaga [Giovanni Ricca]
+e61b88475656 [WIP] power: supply: mtk_pd_adapter: Initializate xaga [Giovanni Ricca]
+11dca686d7a4 [WIP] power: supply: mtk_charger: Initializate xaga [Giovanni Ricca]
+452f9b7425e7 [WIP] power: supply: bq28z610: Initializate xaga [Giovanni Ricca]
+85b470477818 [WIP] power: supply: ln8000: Initializate xaga [Giovanni Ricca]
+144fdde9d92f [TMP] drm: panel: l16: Define LCM struct [Giovanni Ricca]
+1459600792b7 drm: panel: Import xaga panel drivers [Giovanni Ricca]
+f6fa5d476465 arm64: boot: dts: Import xaga dts [Giovanni Ricca]
+ba234301a726 power: supply: sc8551: Guard try_to_find_i2c_regess for yuechu [Giovanni Ricca]
+e2484265c798 power: supply: step_jeita_charge: Resolve Wunused-variable errors [Giovanni Ricca]
+b19ac2c6c9eb power: supply: mt6375-charger: Correct some guard [Giovanni Ricca]
+
+* vendor/xiaomi/xaga
+245544b xaga: Sync with tree [Giovanni Ricca]
+
